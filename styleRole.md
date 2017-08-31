@@ -76,8 +76,10 @@ sass
 * 类名前缀在sass中可以通过统一方式完成：
 ``` sass
 $modal-prefix: modal;
+
 .#{$modal-prefix}-container {
-    
+    background: XXX;
+    ... 
 }
 ```
 

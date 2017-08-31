@@ -75,10 +75,9 @@ sass
 	
 * 类名前缀在sass中可以通过统一方式完成：
 ``` sass
-@modal-prefix: modal;
-.@{modal-prefix} {
-}
-.@{modal-prefix}-title {
+$modal-prefix: modal;
+.#{$modal-prefix}-container {
+    
 }
 ```
 
@@ -112,12 +111,14 @@ sass
 例如:
 ``` sass
 .mt10 {
-    margin-top：10px; //直观缩写margin-top：10px，用于小范围调整
+    margin-top：10px; // 直观缩写margin-top：10px，用于小范围调整
 }
 ```
 ``` sass
-.mb5 {
-    margin-bottom：5px;    
+.modalName-container {
+    .mb5 { // 辅助类名建议放置在组件类名下，保证私有性
+        margin-bottom：5px;    
+    }
 }
 ``` 
 
